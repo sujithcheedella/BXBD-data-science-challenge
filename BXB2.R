@@ -60,7 +60,7 @@ tsdisplay(residuals(fit2), lag.max = 45, main = "(2,2,2) model residuals")
 
 #prediction for the next six months
 pred <- predict(fit2, n.ahead = 6)
-pred1 <- 2.718 ^pred$pred
+pred1 <- 2.718 ^pred$pred #'2.718' is because we have taken log in the model
 pred1 
 
 
